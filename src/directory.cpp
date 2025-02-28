@@ -37,7 +37,7 @@ void Directory::showContacts() const {
         return;
     }
     cout << "Contact list:" << endl;
-    for (size_t i = 0; 1 < contacts.size(); ++i) {
+    for (size_t i = 0; i < contacts.size(); ++i) {
         cout << i + 1 << ": ";
         contacts[i].show();
     }

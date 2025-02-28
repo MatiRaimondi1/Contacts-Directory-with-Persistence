@@ -49,10 +49,8 @@ void Directory::addContact() {
     cin.ignore();
     getline(cin, name);
     cout << "Enter telephone: ";
-    cin.ignore();
     getline(cin, telephone);
     cout << "Enter mail: ";
-    cin.ignore();
     getline(cin, mail);
     contacts.push_back(Contact(name, telephone, mail));
     saveContacts();

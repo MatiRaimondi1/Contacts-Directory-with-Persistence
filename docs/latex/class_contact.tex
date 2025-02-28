@@ -1,0 +1,115 @@
+\doxysection{Contact Class Reference}
+\hypertarget{class_contact}{}\label{class_contact}\index{Contact@{Contact}}
+
+
+Represents a contact with a name, phone number, and email.  
+
+
+
+
+{\ttfamily \#include $<$contact.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_contact_a80caa8c03f55c0fd833d0be7b969c0e8}{Contact}} (string \+\_\+name, string \+\_\+telephone, string \+\_\+mail)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{class_contact}{Contact}. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_contact_a4667957a6438b7982d35e9f740f52184}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the contact\textquotesingle{}s name. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_contact_a74c8a9a36da71ad1ee965af0c605e83b}{get\+Telephone}} () const
+\begin{DoxyCompactList}\small\item\em Gets the contact\textquotesingle{}s phone number. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_contact_af3c9d3c0572127e2c020c794b6843d85}{get\+Mail}} () const
+\begin{DoxyCompactList}\small\item\em Gets the contact\textquotesingle{}s email address. \end{DoxyCompactList}\item 
+\Hypertarget{class_contact_a8df0cd5dfde97187cd700019e97ddb85}\label{class_contact_a8df0cd5dfde97187cd700019e97ddb85} 
+void {\bfseries show} () const
+\begin{DoxyCompactList}\small\item\em Displays the contact\textquotesingle{}s details. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_contact_a8f4339db4c0bdc7bfc0a111447a841d5}{to\+File\+String}} () const
+\begin{DoxyCompactList}\small\item\em Converts the contact\textquotesingle{}s details into a formatted string for file storage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a contact with a name, phone number, and email. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_contact_a80caa8c03f55c0fd833d0be7b969c0e8}\index{Contact@{Contact}!Contact@{Contact}}
+\index{Contact@{Contact}!Contact@{Contact}}
+\doxysubsubsection{\texorpdfstring{Contact()}{Contact()}}
+{\footnotesize\ttfamily \label{class_contact_a80caa8c03f55c0fd833d0be7b969c0e8} 
+Contact\+::\+Contact (\begin{DoxyParamCaption}\item[{string}]{\+\_\+name}{, }\item[{string}]{\+\_\+telephone}{, }\item[{string}]{\+\_\+mail}{}\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{class_contact}{Contact}. 
+
+Constructs a \doxylink{class_contact}{Contact} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & The name of the contact. \\
+\hline
+{\em telephone} & The phone number of the contact. \\
+\hline
+{\em mail} & The email address of the contact. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_contact_af3c9d3c0572127e2c020c794b6843d85}\index{Contact@{Contact}!getMail@{getMail}}
+\index{getMail@{getMail}!Contact@{Contact}}
+\doxysubsubsection{\texorpdfstring{getMail()}{getMail()}}
+{\footnotesize\ttfamily \label{class_contact_af3c9d3c0572127e2c020c794b6843d85} 
+string Contact\+::get\+Mail (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the contact\textquotesingle{}s email address. 
+
+\begin{DoxyReturn}{Returns}
+The email address of the contact. 
+\end{DoxyReturn}
+\Hypertarget{class_contact_a4667957a6438b7982d35e9f740f52184}\index{Contact@{Contact}!getName@{getName}}
+\index{getName@{getName}!Contact@{Contact}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily \label{class_contact_a4667957a6438b7982d35e9f740f52184} 
+string Contact\+::get\+Name (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the contact\textquotesingle{}s name. 
+
+\begin{DoxyReturn}{Returns}
+The name of the contact. 
+\end{DoxyReturn}
+\Hypertarget{class_contact_a74c8a9a36da71ad1ee965af0c605e83b}\index{Contact@{Contact}!getTelephone@{getTelephone}}
+\index{getTelephone@{getTelephone}!Contact@{Contact}}
+\doxysubsubsection{\texorpdfstring{getTelephone()}{getTelephone()}}
+{\footnotesize\ttfamily \label{class_contact_a74c8a9a36da71ad1ee965af0c605e83b} 
+string Contact\+::get\+Telephone (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Gets the contact\textquotesingle{}s phone number. 
+
+\begin{DoxyReturn}{Returns}
+The phone number of the contact. 
+\end{DoxyReturn}
+\Hypertarget{class_contact_a8f4339db4c0bdc7bfc0a111447a841d5}\index{Contact@{Contact}!toFileString@{toFileString}}
+\index{toFileString@{toFileString}!Contact@{Contact}}
+\doxysubsubsection{\texorpdfstring{toFileString()}{toFileString()}}
+{\footnotesize\ttfamily \label{class_contact_a8f4339db4c0bdc7bfc0a111447a841d5} 
+string Contact\+::to\+File\+String (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Converts the contact\textquotesingle{}s details into a formatted string for file storage. 
+
+\begin{DoxyReturn}{Returns}
+A string containing the contact\textquotesingle{}s information in a file-\/friendly format. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{contact_8h}{contact.\+h}}\item 
+\mbox{\hyperlink{contact_8cpp}{contact.\+cpp}}\end{DoxyCompactItemize}

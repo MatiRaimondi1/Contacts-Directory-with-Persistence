@@ -22,4 +22,4 @@ class Directory {
         void removeContact();
 };
 
-#endif
+#endif // DIRECTORY_H

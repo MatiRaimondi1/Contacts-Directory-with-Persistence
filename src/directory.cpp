@@ -1,9 +1,18 @@
+/// @file directory.cpp
+/// @brief Implements the Directory class.
+
 #include "directory.h"
 
+/**
+ * @brief Constructs a Directory object.
+ */
 Directory::Directory() {
     loadContacts();
 }
 
+/**
+* @brief Saves the contacts to a file.
+*/
 void Directory::saveContacts() {
     ofstream file("contacts.data");
     if (!file) {
@@ -16,6 +25,9 @@ void Directory::saveContacts() {
     file.close();
 }
 
+/**
+* @brief Loads contacts from a file.
+*/
 void Directory::loadContacts() {
     ifstream file("contacts.data");
     if (!file) return;
@@ -31,6 +43,9 @@ void Directory::loadContacts() {
     file.close();
 }
 
+/**
+* @brief Displays all contacts stored in the directory.
+*/
 void Directory::showContacts() const {
     if (contacts.empty()) {
         cout << "You have no contacts saved." << endl;
@@ -43,6 +58,9 @@ void Directory::showContacts() const {
     }
 }
 
+/**
+* @brief Adds a new contact to the directory.
+*/
 void Directory::addContact() {
     string name, telephone, mail;
     cout << "Enter name: ";
@@ -57,6 +75,9 @@ void Directory::addContact() {
     cout << "Contact added." << endl;
 }
 
+/**
+* @brief Removes a contact from the directory.
+*/
 void Directory::removeContact() {
     showContacts();
     if (contacts.empty()) return;
@@ -72,6 +93,10 @@ void Directory::removeContact() {
     cout << "Contact removed." << endl;
 }
 
+
+/**
+* @brief Searches for a contact by name.
+*/
 void Directory::searchContact() const {
     string name;
     cout << "Enter name to search: ";

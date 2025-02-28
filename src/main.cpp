@@ -1,5 +1,13 @@
+/// @file main.cpp
+/// @brief Entry point of the Contacts Directory application.
+
 #include "directory.h"
 
+
+/**
+ * @brief Main function to run the contacts directory application.
+ * @return Exit status.
+ */
 int main() {
     Directory directory;
     int option;

@@ -1,2 +1,4 @@
-# Contacts-Directory-with-Persistence
-An application developed in C++ that simulates a contact list where you can add, remove, search contacts and save them in a file to be loaded later.
+# Contacts Directory Application
++ An application developed in C++ that simulates a contact list.
++ Permits adding, removing and searching contacts by their name, email and phone number.
++ Console based UI.
